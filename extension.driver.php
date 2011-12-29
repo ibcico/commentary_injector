@@ -48,7 +48,7 @@
 		
 	public function collect_data($context)
 		{
-			$subsection_id = 104;
+			$subsection_id = 17;
 			$id = $_POST['fields']['id'];
 			$entry_id = $context['entry']->get('id');
 			Symphony::Database()->query("INSERT INTO tbl_entries_data_$subsection_id (id, entry_id, relation_id) VALUES (NULL, $id, $entry_id)");
